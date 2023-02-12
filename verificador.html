@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador De Idade</title>
+    <style>
+        body {
+            background-color: rgb(93, 93, 193);
+            font: normal arial 15pt;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+        img{
+            box-shadow: 3px 3px 10px;
+            margin-left: 30%;
+            background-color: #ddd;
+            border-radius: 50%;
+            height: 200px;
+            object-fit: cover;
+            width: 200px;
+            margin-top: 10px;
+
+
+        }
+        #res{
+          margin-left: 24%;
+            
+            
+        }
+       
+        
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+
+    </header>
+
+    <section>
+        <div>
+            <p>Ano De Nascimento
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+            <div id="res">
+                Preencha os dados acima para ver o resultado
+            </div>
+
+        
+        <div id="res">
+            
+        </div>
+
+   </section>
+
+    <footer>
+        <p>&copy; Adriano</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
